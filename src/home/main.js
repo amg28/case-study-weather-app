@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 const MainWrapper = styled.div`
   font-size: 3.5rem;
-  // position: relative;
-  // height: inherit;
+  height: 100%;
+  width: 100%;
+  margin: 0;
   & > img {
     width: 100%;
     height: 100%;
@@ -42,10 +43,8 @@ const MainWrapper = styled.div`
 `;
 
 const InfoWrapper = styled.div`
-  // font-size: 3.5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  // background-color: rgba(0, 0, 0, 0.4);
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.4),
@@ -57,10 +56,8 @@ const InfoWrapper = styled.div`
   color: #ffffff;
   display: flex;
   align-items: center;
-  // height: 10rem;
   padding: 3rem 3rem;
   h2 {
-    // @include font(#ffffff, "OpenSans-Bold", 9rem, bold);
     font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
     font-size: 9rem;
     font-weight: bold;
@@ -76,7 +73,6 @@ const InfoWrapper = styled.div`
   .city-info {
     flex: 1;
     h1 {
-      // @include font(#ffffff, "OpenSans-Light", 2.8rem, 300);
       font-family: "OpenSans-Light", Arial, Helvetica, sans-serif;
       font-size: 2.8rem;
       font-weight: 300;
@@ -87,7 +83,6 @@ const InfoWrapper = styled.div`
       }
     }
     h3 {
-      // @include font(#ffffff, "OpenSans-SemiBold", 1.6rem, 600);
       font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
       font-size: 1.6rem;
       font-weight: 600;
